@@ -13,7 +13,7 @@ const cors = require('cors')
 // console.log("Hello")
 
 app.use(cors({
-    origin: 'http://localhost:5173',
+    origin: 'https://dancing-panda-9a3c2d.netlify.app',
     credentials: true 
 }))
 
