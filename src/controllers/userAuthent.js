@@ -19,7 +19,7 @@ const register = async (req,res)=>{
     //
     
      const user =  await User.create(req.body);
-     const token =  jwt.sign({_id:user._id , emailId:emailId, role:'user'},process.env.JWT_KEY,{expiresIn: 60*60});
+     const token =  jwt.sign({_id:user._id , emailId:emailId, role:'user'},'b903a0516a488eb7f30997f4a9d5c6b37294b3768b1ab04666813851557857fd',{expiresIn: 60*60});
      const reply = {
         firstName: user.firstName,
         emailId: user.emailId,
