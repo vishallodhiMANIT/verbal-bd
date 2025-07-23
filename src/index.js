@@ -13,7 +13,7 @@ const cors = require('cors')
 // console.log("Hello")
 
 app.use(cors({
-    origin: 'https://merry-druid-dfd032.netlify.app',
+    origin: 'https://jazzy-rabanadas-d3bf41.netlify.app',
     credentials: true 
 }))
 
